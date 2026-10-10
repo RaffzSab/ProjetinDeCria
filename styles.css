@@ -1,0 +1,222 @@
+body {
+    background-color: whitesmoke;
+}
+
+header {
+    background-color: rgb(19, 138, 19);
+    border-bottom: 4px solid #055729;
+    border-top: 4px solid #055729;
+    padding: 15px 0;
+    border-radius: 8px;
+}
+
+.cabeçalho {
+    width: 50%;
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    background-color: rgb(255, 253, 253);
+    color: rgb(19, 138, 19);
+    font-size: 30px;
+    font-weight: lighter;
+    padding: 10px;
+    margin-right: 15px;
+    border-radius: 10px;
+}
+
+.instituicao {
+    display: block;
+    color: whitesmoke;
+    font-size: 30px;
+    font-weight: lighter;
+    letter-spacing: 1px;
+}
+
+main {
+    width: 50%;
+    max-width: 1000px;
+    margin: 40px auto;
+}
+
+.introducao {
+    padding: 15px;
+    letter-spacing: 1px;
+    background-color: white;
+    border-radius: 50px;
+    border-left: 6px solid #055729;
+    border-right: 6px solid #055729;
+}
+
+h1 {
+    color: #640202;
+    font-weight: bolder;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+    text-shadow: 1px 1px 2px gray;
+}
+
+.instrucoes {
+    font-weight: lighter;
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 1.5;
+    margin-bottom: 0.5em;
+    font-size: larger;
+}
+
+form {
+    background-color: white;
+    padding: 30px;
+    border-radius: 30px;
+    margin: 5% auto;
+}
+
+fieldset {
+    border: 1px solid #d4d3d8;
+    border-radius: 10px;
+    padding: 25px;
+    margin-bottom: 30px;
+}
+
+legend {
+    font-size: 20px;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    padding: 0 15px;
+    color: #055729;
+}
+
+.campo {
+    margin-bottom: 20px;
+    font-size: large;
+}
+
+.linha {
+    display: flex;
+    gap: 25px;
+}
+
+.linha .campo {
+    flex: 1;
+}
+
+label {
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+    display: block;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background-color: #fafcfa;
+    font-size: large;
+    padding: 10px;
+    border: 1px solid #4f0303;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="date"]:focus,
+select:focus,
+textarea:focus {
+    outline: 2px solid #3ca66b;
+    border-color: #055729;
+    background-color: white;
+}
+
+textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+.opcoes {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.opcao {
+    display: flex;
+    align-items: center;
+    background-color: #f1f7f3;
+    border-radius: 10px;
+    padding: 10px 14px;
+    border: 1px solid #d0ded5;
+}
+
+.opcao label {
+    margin: 0 5px;
+    font-weight: lighter;
+    letter-spacing: 0.5px;
+    font-size: normal;
+}
+
+.opcao input {
+    cursor: pointer;
+}
+
+.botoes {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+button {
+    cursor: pointer;
+    border: 1px solid #055729;
+    border-radius: 20px;
+    padding: 12px 28px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.cadastrar {
+    background-color: #42ad71;
+    color: white;
+}
+
+.limpar {
+    background-color: #42ad71;
+    color: white;
+}
+
+.cadastrar:hover {
+    background-color: #055729;
+}
+
+.limpar:hover {
+    background-color: #055729;
+}
+
+footer {
+    padding: 5px 0;
+    background-color: rgb(19, 138, 19);
+    border-bottom: solid #055729;
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 10px;
+    font-size: 23px;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    display: block;
+}

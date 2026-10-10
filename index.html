@@ -1,0 +1,174 @@
+<!DOCTYPE HTML>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="Logo.png">
+        <meta name="description" content="Site de Cadastro da prova A1, conteúdo academico e usado para fins academicos de estudo do HTML5 e CSS.">
+        <title>Site Cadastro</title>
+    </head>
+
+    <body>
+
+        <header>
+            <div class="cabeçalho">
+                <div class="logo">IFTO</div>
+                <div>
+                    <span class="instituicao">INSTITUTO FEDERAL DO TOCANTINS</span>
+                </div>
+            </div>
+        </header>
+
+        <main>
+
+            <section class="introducao">
+                <h1>Cadastro de Aluno — IFTO</h1>
+
+                <p class="instrucoes">
+                    Preencha o formulário abaixo com suas informações pessoais e acadêmicas.
+                    Confira os dados antes de finalizar o cadastro.
+                </p>
+
+            </section>
+
+            <form>
+
+                <fieldset>
+                    <legend>Dados Pessoais</legend>
+
+                    <div class="campo">
+                        <label for="nome">Nome completo</label>
+                        <input type="text" name="nome" id="nome" placeholder="Digite seu nome completo" required>
+                    </div>
+
+                    <div class="linha">
+
+                        <div class="campo">
+                            <label for="nascimento">Data de nascimento</label>
+                            <input type="date" id="nascimento" name="nascimento" required>
+                        </div>
+
+                        <div class="campo">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" name="email" placeholder="exemplo@email.com" required>
+                        </div>
+
+                    </div>
+
+                    <div class="campo">
+                        <label for="senha">Senha</label>
+                        <input type="password" id="senha" name="senha" placeholder="Digite uma senha" required>
+                    </div>
+
+                </fieldset>
+
+                <fieldset>
+                    <legend>Dados Acadêmicos</legend>
+
+                    <div class="linha">
+
+                        <div class="campo">
+                            <label for="curso">Curso</label>
+                            <select id="curso" name="curso" required>
+                                <option value="">Selecione seu curso</option>
+                                <option value="informatica">Informática</option>
+                                <option value="administracao">Administração</option>
+                                <option value="engenharia">Engenharia Civil</option>
+                                <option value="agropecuaria">Agropecuária</option>
+                            </select>
+                        </div>
+
+                        <div class="campo">
+                            <label for="campus">Campus</label>
+                            <select id="campus" name="campus" required>
+                                <option value="">Selecione o campus</option>
+                                <option value="palmas">Palmas</option>
+                                <option value="araguaina">Araguaína</option>
+                                <option value="gurupi">Gurupi</option>
+                            </select>
+                        </div>
+
+                    </div>
+
+                    <div class="campo">
+                        <label>Modalidade</label>
+
+                        <div class="opcoes">
+
+                            <div class="opcao">
+                                <input type="radio" id="integrado" name="modalidade" value="integrado">
+                                <label for="integrado">Integrado</label>
+                            </div>
+
+                            <div class="opcao">
+                                <input type="radio" id="subsequente" name="modalidade" value="subsequente">
+                                <label for="subsequente">Subsequente</label>
+                            </div>
+
+                            <div class="opcao">
+                                <input type="radio" id="superior" name="modalidade" value="superior">
+                                <label for="superior">Superior</label>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </fieldset>
+
+                <fieldset>
+                    <legend>Informações Complementares</legend>
+
+                    <div class="campo">
+                        <label>Áreas de interesse</label>
+
+                        <div class="opcoes">
+
+                            <div class="opcao">
+                                <input type="checkbox" id="programacao" name="interesse" value="programacao">
+                                <label for="programacao">Programação</label>
+                            </div>
+
+                            <div class="opcao">
+                                <input type="checkbox" id="redes" name="interesse" value="redes">
+                                <label for="redes">Redes de Computadores</label>
+                            </div>
+
+                            <div class="opcao">
+                                <input type="checkbox" id="banco" name="interesse" value="banco">
+                                <label for="banco">Banco de Dados</label>
+                            </div>
+
+                            <div class="opcao">
+                                <input type="checkbox" id="web" name="interesse" value="web">
+                                <label for="web">Desenvolvimento Web</label>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="campo">
+                        <label for="observacoes">Observações</label>
+                        <textarea id="observacoes" name="observacoes" placeholder="Digite alguma informação adicional..."></textarea>
+                    </div>
+
+                </fieldset>
+
+                <div class="botoes">
+                    <button type="reset" class="limpar">Limpar</button>
+                    <button type="submit" class="cadastrar">Cadastrar</button>
+                </div>
+
+            </form>
+
+        </main>
+
+        <footer>
+            <p>Instituto Federal de Educação, Ciência e Tecnologia do Tocantins</p>
+            <p>IFTO — Cadastro Acadêmico</p>
+        </footer>
+
+    </body>
+</html>

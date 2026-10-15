@@ -1,2 +1,2 @@
 # ProjetinDeCria
-HTML, CSS tera updates
+HTML, CSS terá updates
